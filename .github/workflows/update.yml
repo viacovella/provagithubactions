@@ -5,6 +5,10 @@ on:
     - cron: '*/15 * * * *'  # Esegue lo script ogni 15 minuti
   workflow_dispatch:         # Permette di avviarlo anche manualmente da GitHub
 
+# AUTORIZZAZIONE DI SCRITTURA PER IL BOT DI GITHUB ACTIONS
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
